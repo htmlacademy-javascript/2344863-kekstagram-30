@@ -16,8 +16,8 @@ comparesNumberLetters('проверяемая строка', 18); // true
 comparesNumberLetters('проверяемая строка', 10); // false
 
 /*функция checksPalindrome получает строку setString и проверяет является ли она палидромом. Берет первый символ и сравнивает его в последним, потом второй с предпоследним и т.д.*/
-function checksPalindrome(setString) {
-  let string = setString.toUpperCase()
+/*function checksPalindrome(setString) {
+  let string = setString.toUpperCase();
   for (let i = 0; i <= Math.floor(string.length / 2); i++) {
     console.log('Длинна выражения ' + string.length + ' символов.', ' -номер проверки ' + (i+1));
 
@@ -39,3 +39,31 @@ checksPalindrome('топот');
 checksPalindrome('Кекс');
 checksPalindrome('ДовОд');
 checksPalindrome('Лёша на полке клопа нашёл')
+
+
+/*Функция extractsNumbersFromString принимает строку, извлекает содержащиеся в ней цифры от 0 до 9 и возвращает их в виде целого положительного числа number.
+Функция берет по очереди символы и определяет их принадлежность к цифре. Если символ является цифрой, то она записывается методом конкаиенации в number.*/
+/*function extractsNumbersFromString(string) {
+  for (let i = 0; i < string.length; i++) {
+    let w = string[i]
+    console.log(w)
+    if (w >= 0) {
+      let number = String(number) + w
+    }
+
+  }
+}
+extractsNumbersFromString('gsf256sf5')*/
+
+let man = {
+  name: 'kos',
+  age: 35,
+  haer: {
+    color: 'black',
+    w: 'length'},
+  religiy: true
+}
+
+let otherMan = structuredClone(man);
+console.log(otherMan)
+console.log(man ===otherMan)
