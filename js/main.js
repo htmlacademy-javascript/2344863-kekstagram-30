@@ -1,21 +1,24 @@
-const message = ['Всё отлично!', 'В целом всё неплохо. Но не всё.',
+
+import {photo, commentArray, descriptionPhotos} from './functions.js';
+/*const message = ['Всё отлично!', 'В целом всё неплохо. Но не всё.',
   'Когда вы делаете фотографию, хорошо бы убирать палец из кадра. В конце концов это просто непрофессионально.',
   'Моя бабушка случайно чихнула с фотоаппаратом в руках и у неё получилась фотография лучше.',
   'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.',
   'Лица у людей на фотке перекошены, как будто их избивают. Как можно было поймать такой неудачный момент?!'];
 const name = ['Гена', 'Gosha', 'Diana', 'Lubovь', 'Roman', 'Kosta', 'Natasha', 'Zena', 'Muxomor'];
 const description = ['Uxty', 'Fu!!', 'Good', 'Shlack', 'Axty!', 'Super!', 'Otstoi'];
-let descriptionPhotos = [];
+const numberUsers = 25;*/
 //функция создания случайного индекса
-const getRandomInteger = (a, b) => {
+/*const getRandomInteger = (a, b) => {
   const lower = Math.ceil(Math.min(a, b));
   const upper = Math.floor(Math.max(a, b));
   const result = Math.random() * (upper - lower + 1) + lower;
   return Math.floor(result);
-};
+};*/
+/*let descriptionPhotos = [];
 let photo = function() {
   //получение id
-  let idValue = getRandomInteger(0, 25);
+  let idValue = getRandomInteger(0, numberUsers);
   //получение имени пользователя
   let nameUser = getRandomInteger(0, name.length - 1);
   //получение адреса
@@ -38,7 +41,10 @@ let photo = function() {
     comments: commentArray,
   };
 };
-for (let i = 0; i < 25; i++) {
+descriptionPhotos = Array.from({length: numberUsers}, photo);
+/*for (let i = 0; i < 25; i++) {
   descriptionPhotos[i] = photo();
-}
+}*/
+let descriptionPhotos = [];
 console.log(descriptionPhotos);
+
