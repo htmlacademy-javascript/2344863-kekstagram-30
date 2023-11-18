@@ -6,5 +6,5 @@ const getRandomInteger = (a, b) => {
   const result = Math.random() * (upper - lower + 1) + lower;
   return Math.floor(result);
 };
-getRandomInteger(0, length - 1);
+
 export {getRandomInteger};
