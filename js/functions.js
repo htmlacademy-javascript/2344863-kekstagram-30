@@ -1,7 +1,7 @@
 //Создание массива данных для фотографий
 import { message, name, description, numberUsers, numberOutputMessages } from './data.js';
 import {getRandomInteger} from './random-integer.js';
-let descriptionPhotos = [];
+const descriptionPhotos = [];
 const photo = function(index) {
   //получение id
   //const idValue = getRandomInteger(0, numberUsers);
@@ -19,7 +19,7 @@ const photo = function(index) {
   for (let i = 0; i < getRandomInteger(0, numberOutputMessages); i++) {
     const commentValue = getRandomInteger(0, message.length - 1);
     commentArray.push(message[commentValue]);
-  };
+  }
   return {
     id: index,
     name: name[nameUser],
@@ -29,8 +29,7 @@ const photo = function(index) {
     comments: commentArray
   };
 };
-// descriptionPhotos = Array.from({length: numberUsers},photo);
-
+//Получение массива неповторяющихся индексов
 const randomIndex = (length) => {
   const arr = [];
   while(arr.length !== length) {
@@ -45,6 +44,6 @@ const unicIndexes = randomIndex(numberUsers);
 
 for(let i = 0; i < numberUsers; i++) {
   descriptionPhotos.push(photo(unicIndexes[i]));
-};
+}
 
 export {descriptionPhotos};

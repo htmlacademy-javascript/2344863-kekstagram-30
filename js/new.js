@@ -1,4 +1,5 @@
-const randomIndex = (length) => {
+
+/*const randomIndex = (length) => {
   const arrowIndex = [];
   while(arrowIndex.length !== length) {
     const index = getRandomInteger(0, length - 1);
@@ -12,4 +13,4 @@ const unicIndexses = randomIndex(numberUsers);
 
 for(let i = 0; i < numberUsers; i++) {
   descriptionPhotos.push(photo(unicIndexses[i]));
-};
+}*/

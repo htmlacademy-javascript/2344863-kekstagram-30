@@ -28,28 +28,3 @@ const renderThumbnails = (photos) => {
 //вызываем функцию создания миниатюр
 renderThumbnails(descriptionPhotos);
 export {renderThumbnails};
-
-
-
-
-
-// Посмотреть как работать с html шаблонами
-//получить шаблон picture
-//let createThumbnails = (values) => {
-//values.forEach((element, index) => {
-//  const thumbnail = photo(index);
-  //вставить в разметку данные  из thumbnail
-  /*<a href="#" class="picture">
-      <img class="picture__img" src="thumbnail.url" width="182" height="182" alt="Случайная фотография">
-      <p class="picture__info">
-        <span class="picture__comments">thumbnail.comments</span>
-        <span class="picture__likes">thumbnail.like</span>
-      </p>
-    </a>*/
-
-    //вставить thumbnails в фрагмент из DocumentFragment
-//});
-  //вставить фрагмент в элемент с классом 'pictures'
-
-//}
-//createThumbnails(photos)

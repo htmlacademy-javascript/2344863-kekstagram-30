@@ -7,5 +7,5 @@ const name = ['Гена', 'Gosha', 'Diana', 'Lubovь', 'Roman', 'Kosta', 'Natash
 const description = ['Uxty', 'Fu!!', 'Good', 'Shlack', 'Axty!', 'Super!', 'Otstoi'];
 const numberUsers = 25;
 const numberOutputMessages = 30;
-const photos = new Array(25).fill()
+const photos = new Array(25).fill();
 export {message, name, description, numberUsers, numberOutputMessages, photos};
