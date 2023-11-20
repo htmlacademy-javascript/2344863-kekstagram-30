@@ -1,4 +1,3 @@
-import {descriptionPhotos} from './functions.js';
 //определяем шаблон
 const thumbnailTemplate = document.querySelector('#picture').content.querySelector('.picture');
 //определяем контейнер для размещения фото
@@ -26,5 +25,5 @@ const renderThumbnails = (photos) => {
   container.append(fragment);
 };
 //вызываем функцию создания миниатюр
-renderThumbnails(descriptionPhotos);
+
 export {renderThumbnails};
